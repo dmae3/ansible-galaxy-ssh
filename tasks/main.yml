@@ -1,0 +1,7 @@
+---
+- name: put ssh configuration
+  template: src=ssh_config.j2 dest=/etc/ssh/ssh_config mode=0644
+
+- name: put sshd configuration
+  template: src=sshd_config.j2 dest=/etc/ssh/sshd_config mode=0600
+  notify: restart sshd
