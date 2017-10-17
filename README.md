@@ -33,7 +33,7 @@ Example Playbook
 - hosts: all
   become: true
   roles:
-    - { role: ssh, ssh_client_port: 22, ssh_server_port: 22 }
+    - { role: galaxy-ssh, ssh_client_port: 22, ssh_server_port: 22 }
 ```
 
 License
